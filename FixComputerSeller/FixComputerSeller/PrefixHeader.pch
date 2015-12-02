@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  O2O_XiCheSeller
+//
+//  Created by 密码为空！ on 15/6/18.
+//  Copyright (c) 2015年 zongyoutec.com. All rights reserved.
+//
+
+#ifndef O2O_XiCheSeller_PrefixHeader_pch
+#define O2O_XiCheSeller_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define MAS_SHORTHAND //use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND_GLOBALS //enable auto-boxing for default syntax
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#import "CustomDefine.h"
+#import "NSString+CheckEmpty.h"
+#import "IQKeyboardManager.h"
+#import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+SuperView.h"
+#import "Util.h"
+#import "UIButton+WebCache.h"
+#import "UIViewExt.h"
+#import "UIView+Additions.h"
+#import "MJPhotoBrowser.h"
+#import "MJPhoto.h"
+#import "CTAssetsPickerController.h"
+#import "RSKImageCropViewController.h"
+#import "dateModel.h"
+#import "TTTAttributedLabel.h"
+#import "Masonry.h"
+
+#import <CoreText/CoreText.h>
+
+#import "NSString+WPAttributedMarkup.h"
+
+#import "WPAttributedStyleAction.h"
+#import "WPHotspotLabel.h"
+#import "UITableViewCell+HDFAutoCalculateHeight.h"
+#import "DetailTextView.h"
+#import "UILabel+HYBAttributedCategory.h"
+#endif

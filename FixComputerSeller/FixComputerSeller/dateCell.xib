@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="zd5-Ad-swI" customClass="DatingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zd5-Ad-swI" id="Mcm-TB-QaE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张晓波 1500000001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8o-Db-koW">
+                        <rect key="frame" x="8" y="8" width="246" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etQ-io-vWs" customClass="cusTomeBtn">
+                        <rect key="frame" x="262" y="8" width="45" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="OiU-nC-KU9"/>
+                            <constraint firstAttribute="width" constant="45" id="PzK-Mj-YKS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="写日志">
+                            <color key="titleColor" red="0.2666666667" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆市渝中区上清时" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msc-3P-RJs">
+                        <rect key="frame" x="8" y="44" width="299" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fht-N8-nhM">
+                        <rect key="frame" x="8" y="70" width="299" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k8o-Db-koW" firstAttribute="top" secondItem="Mcm-TB-QaE" secondAttribute="topMargin" id="3Qd-iG-Iro"/>
+                    <constraint firstItem="k8o-Db-koW" firstAttribute="leading" secondItem="Mcm-TB-QaE" secondAttribute="leadingMargin" id="7oc-Ih-cxl"/>
+                    <constraint firstItem="msc-3P-RJs" firstAttribute="top" secondItem="k8o-Db-koW" secondAttribute="bottom" constant="18" id="Bfx-a8-ebr"/>
+                    <constraint firstItem="Fht-N8-nhM" firstAttribute="leading" secondItem="Mcm-TB-QaE" secondAttribute="leadingMargin" id="FHm-79-Wwv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fht-N8-nhM" secondAttribute="trailing" constant="5" id="XRe-gY-MJP"/>
+                    <constraint firstItem="msc-3P-RJs" firstAttribute="leading" secondItem="Mcm-TB-QaE" secondAttribute="leadingMargin" id="dZT-C0-mh3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="msc-3P-RJs" secondAttribute="trailing" constant="5" id="dwB-0N-wW4"/>
+                    <constraint firstItem="etQ-io-vWs" firstAttribute="top" secondItem="Mcm-TB-QaE" secondAttribute="topMargin" id="jLr-rx-c4K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fht-N8-nhM" secondAttribute="bottom" constant="3" id="jNh-CN-Otv"/>
+                    <constraint firstItem="Fht-N8-nhM" firstAttribute="top" secondItem="msc-3P-RJs" secondAttribute="bottom" constant="8" id="kNz-lt-Pha"/>
+                    <constraint firstItem="etQ-io-vWs" firstAttribute="leading" secondItem="k8o-Db-koW" secondAttribute="trailing" constant="8" id="lKP-aW-wUt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="etQ-io-vWs" secondAttribute="trailing" constant="5" id="vog-pO-HFN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mAddress1" destination="msc-3P-RJs" id="aqi-VT-o9H"/>
+                <outlet property="mName1" destination="k8o-Db-koW" id="tK7-kw-QHC"/>
+                <outlet property="mNote1" destination="Fht-N8-nhM" id="4JC-fx-UxH"/>
+                <outlet property="mNoteBtn1" destination="etQ-io-vWs" id="dA5-LJ-LoI"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="247"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="messageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红包到期提醒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeH-MH-PuG">
+                        <rect key="frame" x="10" y="9" width="102" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0As-C1-nwV"/>
+                            <constraint firstAttribute="width" constant="102" id="T7z-hJ-ael"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T7z-hJ-ael"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24" translatesAutoresizingMaskIntoConstraints="NO" id="teC-1y-WW8">
+                        <rect key="frame" x="111" y="8" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="H5A-rp-evc"/>
+                            <constraint firstAttribute="width" constant="9" id="YA1-Jn-Xl7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8j-ZO-EuP">
+                        <rect key="frame" x="288" y="9" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8te-l9-SZ4"/>
+                            <constraint firstAttribute="height" constant="20" id="QkO-zv-JkL"/>
+                        </constraints>
+                        <state key="normal" image="22">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-09-09" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFY-ex-W5o">
+                        <rect key="frame" x="204" y="12" width="75.5" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75.5" id="BoM-w7-vum"/>
+                            <constraint firstAttribute="width" constant="73" id="aEK-oc-HpM"/>
+                            <constraint firstAttribute="width" constant="80" id="vJI-Dk-olI"/>
+                            <constraint firstAttribute="height" constant="17" id="xze-hs-71f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aEK-oc-HpM"/>
+                                <exclude reference="vJI-Dk-olI"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，您有一个¥50元现金红包待领取!亲，您有一个¥50元现金红包待领取!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYQ-0w-LVJ">
+                        <rect key="frame" x="10" y="46" width="302" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="lVr-98-2Ng"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="teC-1y-WW8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3OY-iN-TJ9"/>
+                    <constraint firstItem="UeH-MH-PuG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="Hf2-mg-IBu"/>
+                    <constraint firstItem="bYQ-0w-LVJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="IaL-fD-uk5"/>
+                    <constraint firstItem="BFY-ex-W5o" firstAttribute="leading" secondItem="teC-1y-WW8" secondAttribute="trailing" constant="10" id="NU3-7Q-Xvd"/>
+                    <constraint firstItem="bYQ-0w-LVJ" firstAttribute="top" secondItem="UeH-MH-PuG" secondAttribute="bottom" constant="17" id="SFb-3z-Jdc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T8j-ZO-EuP" secondAttribute="trailing" constant="4" id="UnV-jE-YfY"/>
+                    <constraint firstItem="teC-1y-WW8" firstAttribute="leading" secondItem="UeH-MH-PuG" secondAttribute="trailing" constant="-1" id="WDi-Yx-Hat"/>
+                    <constraint firstItem="UeH-MH-PuG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="XOU-b3-Vcm"/>
+                    <constraint firstItem="BFY-ex-W5o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="teC-1y-WW8" secondAttribute="trailing" constant="10" id="ZRx-Hy-pQo"/>
+                    <constraint firstItem="BFY-ex-W5o" firstAttribute="leading" secondItem="teC-1y-WW8" secondAttribute="trailing" constant="10" id="cA6-pw-FaA"/>
+                    <constraint firstItem="T8j-ZO-EuP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="cnD-lp-nmf"/>
+                    <constraint firstItem="BFY-ex-W5o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="ekp-jS-W7c"/>
+                    <constraint firstItem="T8j-ZO-EuP" firstAttribute="leading" secondItem="BFY-ex-W5o" secondAttribute="trailing" constant="8" id="rBt-LE-fWg"/>
+                    <constraint firstItem="bYQ-0w-LVJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="uEp-HZ-eeX"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="NU3-7Q-Xvd"/>
+                        <exclude reference="cA6-pw-FaA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mPoint" destination="teC-1y-WW8" id="4e7-kW-jRw"/>
+                <outlet property="msgContentLb" destination="bYQ-0w-LVJ" id="PYv-kZ-79K"/>
+                <outlet property="msgTitleLb" destination="UeH-MH-PuG" id="lbv-PH-68o"/>
+                <outlet property="selectedBtn" destination="T8j-ZO-EuP" id="4MX-We-YRd"/>
+                <outlet property="timeLb" destination="BFY-ex-W5o" id="kWa-Zo-aU5"/>
+            </connections>
+            <point key="canvasLocation" x="351" y="337.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="22" width="33" height="33"/>
+        <image name="24" width="12" height="12"/>
+    </resources>
+</document>

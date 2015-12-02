@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="timeSetHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务重复" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-vt-d7a">
+                    <rect key="frame" x="10" y="10" width="73" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="8eC-Vz-IcV"/>
+                        <constraint firstAttribute="width" constant="73" id="aYZ-wC-9A7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-Eb-oUX">
+                    <rect key="frame" x="13" y="40" width="280" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="oCe-i3-bNe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou1" translatesAutoresizingMaskIntoConstraints="NO" id="z6O-Wp-qOk">
+                    <rect key="frame" x="305" y="33" width="7" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="YRR-hf-Wse"/>
+                        <constraint firstAttribute="width" constant="7" id="hLa-fy-VYe"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWC-tM-x2l">
+                    <rect key="frame" x="0.0" y="73" width="320" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择服务时间段" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-pN-qXp">
+                            <rect key="frame" x="8" y="15" width="149" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="149" id="R3R-GN-A9n"/>
+                                <constraint firstAttribute="height" constant="21" id="b0i-D4-lys"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.92156862745098034" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="F26-ar-G4m"/>
+                        <constraint firstItem="jOE-pN-qXp" firstAttribute="top" secondItem="DWC-tM-x2l" secondAttribute="top" constant="15" id="I7g-xD-E54"/>
+                        <constraint firstItem="jOE-pN-qXp" firstAttribute="leading" secondItem="DWC-tM-x2l" secondAttribute="leading" constant="8" id="Rqb-VB-TXM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAW-f5-C4e">
+                    <rect key="frame" x="0.0" y="-8" width="320" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="c53-Jr-5fi"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="z6O-Wp-qOk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="33" id="0VR-Qb-gEu"/>
+                <constraint firstItem="hW6-vt-d7a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="20w-7X-a1N"/>
+                <constraint firstAttribute="trailing" secondItem="z6O-Wp-qOk" secondAttribute="trailing" constant="8" id="34Y-4Z-30A"/>
+                <constraint firstItem="2Rq-Eb-oUX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="CZ6-ni-v98"/>
+                <constraint firstAttribute="trailing" secondItem="2Rq-Eb-oUX" secondAttribute="trailing" constant="27" id="EBV-6H-wkP"/>
+                <constraint firstAttribute="trailing" secondItem="DWC-tM-x2l" secondAttribute="trailing" id="Hea-xZ-G5B"/>
+                <constraint firstItem="DAW-f5-C4e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RNp-Ow-k9y"/>
+                <constraint firstItem="hW6-vt-d7a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Z8M-Ve-Z9c"/>
+                <constraint firstAttribute="trailing" secondItem="DAW-f5-C4e" secondAttribute="trailing" id="dmu-Q3-LGC"/>
+                <constraint firstItem="DWC-tM-x2l" firstAttribute="top" secondItem="2Rq-Eb-oUX" secondAttribute="bottom" constant="13" id="ewi-Q4-CyL"/>
+                <constraint firstItem="DAW-f5-C4e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-8" id="so1-4u-c0d"/>
+                <constraint firstItem="2Rq-Eb-oUX" firstAttribute="top" secondItem="hW6-vt-d7a" secondAttribute="bottom" constant="10" id="uE8-SP-f3m"/>
+                <constraint firstItem="DWC-tM-x2l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zkG-Gb-943"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgkView" destination="DWC-tM-x2l" id="9TD-rc-zhs"/>
+                <outlet property="mWeek" destination="2Rq-Eb-oUX" id="dlB-SZ-h9N"/>
+                <outlet property="selectBtn" destination="DAW-f5-C4e" id="8RK-Iu-wSO"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="225.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiantou1" width="15" height="26"/>
+    </resources>
+</document>

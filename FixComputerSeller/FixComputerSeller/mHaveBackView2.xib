@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xIQ-Ne-GCh" customClass="mHaveBack">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-DI-qtq">
+                    <rect key="frame" x="15" y="1" width="305" height="1"/>
+                    <color key="backgroundColor" red="0.81176470588235294" green="0.80000000000000004" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vEU-hj-T0B"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的回复：dasd 啊" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="let-g7-AGB">
+                    <rect key="frame" x="15" y="20" width="297" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOF-Ou-nvN">
+                    <rect key="frame" x="15" y="56" width="305" height="1"/>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.80000000000000004" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JnB-kM-xqC"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后台回复：维修" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DP-aC-Ws8">
+                    <rect key="frame" x="15" y="72" width="297" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4DP-aC-Ws8" firstAttribute="leading" secondItem="xIQ-Ne-GCh" secondAttribute="leading" constant="15" id="6Dw-3j-Uvw"/>
+                <constraint firstItem="hSp-DI-qtq" firstAttribute="top" secondItem="xIQ-Ne-GCh" secondAttribute="top" constant="1" id="H8d-Aq-Gou"/>
+                <constraint firstItem="let-g7-AGB" firstAttribute="leading" secondItem="xIQ-Ne-GCh" secondAttribute="leading" constant="15" id="Nu0-k4-hK4"/>
+                <constraint firstItem="hSp-DI-qtq" firstAttribute="leading" secondItem="xIQ-Ne-GCh" secondAttribute="leading" constant="15" id="UJg-rx-4k0"/>
+                <constraint firstItem="let-g7-AGB" firstAttribute="top" secondItem="hSp-DI-qtq" secondAttribute="bottom" constant="18" id="V5t-R4-5OU"/>
+                <constraint firstItem="BOF-Ou-nvN" firstAttribute="top" secondItem="let-g7-AGB" secondAttribute="bottom" constant="15" id="aaX-cC-p1D"/>
+                <constraint firstAttribute="trailing" secondItem="let-g7-AGB" secondAttribute="trailing" constant="8" id="dSs-kL-odZ"/>
+                <constraint firstAttribute="trailing" secondItem="4DP-aC-Ws8" secondAttribute="trailing" constant="8" id="f1s-RR-MqI"/>
+                <constraint firstAttribute="trailing" secondItem="BOF-Ou-nvN" secondAttribute="trailing" id="i8C-TP-gm7"/>
+                <constraint firstAttribute="trailing" secondItem="hSp-DI-qtq" secondAttribute="trailing" id="n6m-KX-qnC"/>
+                <constraint firstItem="4DP-aC-Ws8" firstAttribute="top" secondItem="BOF-Ou-nvN" secondAttribute="bottom" constant="15" id="p9E-6r-Vrh"/>
+                <constraint firstItem="BOF-Ou-nvN" firstAttribute="leading" secondItem="xIQ-Ne-GCh" secondAttribute="leading" constant="15" id="yPQ-My-sUS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mMyBack" destination="let-g7-AGB" id="5C5-BO-MbM"/>
+                <outlet property="mServicerBack" destination="4DP-aC-Ws8" id="m6N-ts-yxj"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="266.5"/>
+        </view>
+    </objects>
+</document>
